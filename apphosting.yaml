@@ -22,7 +22,7 @@ runConfig:
   # - variable: MY_SECRET
   #   secret: mySecretRef
 env:
-  variable: ENV_ENV
+  - variable: ENV_ENV
   value: production
   availability:
     - BUILD
