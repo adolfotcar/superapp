@@ -12,4 +12,3 @@ env:
     value: production
     availability:
       - BUILD
-      - RUNTIME

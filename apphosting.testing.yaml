@@ -12,4 +12,3 @@ env:
     value: test
     availability:
       - BUILD
-      - RUNTIME

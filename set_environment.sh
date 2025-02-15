@@ -12,6 +12,9 @@ if [ $ENV_FILE == "production" ]; then
 elif [ $ENV_FILE == "test" ]; then
     echo "Using environment.test.ts"
     cp -f src/environments/environment.test.ts src/environments/environment.ts
+elif [ $ENV_FILE == "development" ]; then
+    echo "Using environment.dev.ts"
+    cp -f src/environments/environment.dev.ts src/environments/environment.ts
 else
     echo "Invalid environment file specified, using default."
     cp -f src/environments/environment.default.ts src/environments/environment.ts
