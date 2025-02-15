@@ -2,16 +2,17 @@
 
 if [ -z "$ENV_FILE" ]; then
     echo "No environment file specified, using default."
+    cp -f src/environments/environment.default.ts src/environments/environment.ts
     exit 0
 fi
 
 if [ $ENV_FILE == "production" ]; then
-    cp -f environments/environment.prod.ts environments/environment.ts
     echo "Using environment.prod.ts"
+    cp -f src/environments/environment.prod.ts src/environments/environment.ts
 elif [ $ENV_FILE == "test" ]; then
-    cp -f environments/environment.test.ts environments/environment.ts
     echo "Using environment.test.ts"
+    cp -f src/environments/environment.test.ts src/environments/environment.ts
 else
     echo "Invalid environment file specified, using default."
-    exit 0
+    cp -f src/environments/environment.default.ts src/environments/environment.ts
 fi

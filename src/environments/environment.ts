@@ -1,6 +1,6 @@
 export const environment = {
-    appVersion: 1,
-    appEnv: "Env",
-    appName: process.env['ENV_ENV'] || "SuperApp"
+    appVersion: 0,
+    appEnv: "TEST",
+    appName: "SuperApp"
   };
   
