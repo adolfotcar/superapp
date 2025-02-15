@@ -8,8 +8,8 @@ runConfig:
 
 # Environment variables and secrets
 env:
-  - variable: ENV_ENV
-    value: Production
+  - variable: ENV_FILE
+    value: prod
     availability:
       - BUILD
       - RUNTIME

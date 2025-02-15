@@ -8,8 +8,8 @@ runConfig:
 
 # Environment variables and secrets
 env:
-  - variable: ENV_ENV
-    value: Testing
+  - variable: ENV_FILE
+    value: test
     availability:
       - BUILD
       - RUNTIME

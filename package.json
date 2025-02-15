@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && echo '*************************************' && echo $ENV_ENV  && echo '*************************************'",
+    "build": "./set_environment.sh && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
