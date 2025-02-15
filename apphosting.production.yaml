@@ -9,7 +9,7 @@ runConfig:
 # Environment variables and secrets
 env:
   - variable: ENV_FILE
-    value: prod
+    value: production
     availability:
       - BUILD
       - RUNTIME
